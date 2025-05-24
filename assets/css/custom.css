@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #e23636;
+  background-color: #AE1919;
   box-shadow: 0 3px 0 rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button.alt {
-  background-color: #0476F2;
+  background-color: #0056B3;
 }
 
 .button.alt:hover {
