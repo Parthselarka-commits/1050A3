@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  background: #1a1a1a url('../images/comic-bg-pattern.png');
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+#header {
+  background: #1a1a1a;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid #e23636;
+}
+
+#header h1 a {
+  color: #e23636;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+#header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/header-bg.jpg');
+  background-size: cover;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+#nav > ul > li > a {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+#nav > ul > li.current > a {
+  background: #e23636;
+}
+
+
+#banner {
+  background-image: url('../../images/Banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+
+#banner header {
+  position: relative;
+  z-index: 1;
+}
+
+#banner header {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-left: 5px solid #e23636;
+}
+
+#banner header h2 {
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+#banner header p {
+  color: #ffcc00;
+  text-transform: uppercase;
+}
+
+
+.icon.featured {
+  background-color: #e23636;
+  transition: all 0.3s ease;
+}
+
+.icon.featured:hover {
+  transform: scale(1.05);
+}
+
+.icon.featured.alt {
+  background-color: #0476F2;
+}
+
+.icon.featured.alt2 {
+  background-color: #ff5fa2;
+}
+
+.icon.featured:after {
+  border-top-color: #e23636;
+}
+
+.icon.featured.alt:after {
+  border-top-color: #0476F2;
+}
+
+.icon.featured.alt2:after {
+  border-top-color: #ff5fa2;
+}
+
+#main {
+  background: #f4f4f4;
+  position: relative;
+}
+
+.box {
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.major h2 {
+  font-size: 2.5em;
+  color: #e23636;
+}
+
+.portfolio .box {
+  border-top: 4px solid #e23636;
+}
+
+.portfolio .box:nth-child(3n+2) {
+  border-top-color: #0476F2;
+}
+
+.portfolio .box:nth-child(3n) {
+  border-top-color: #ff5fa2;
+}
+
+#footer {
+  background: #1a1a1a;
+  color: #aaa;
+  position: relative;
+}
+
+#footer:before {
+  opacity: 0.2;
+}
+
+#footer h2, #footer h3 {
+  color: #ffcc00;
+}
+
+#footer .social a {
+  transition: transform 0.3s ease;
+}
+
+#footer .social a:hover {
+  transform: translateY(-5px);
+}
+
+.button {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #e23636;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff4242;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.2);
+}
+
+.button.alt {
+  background-color: #0476F2;
+}
+
+.button.alt:hover {
+  background-color: #0a8aff;
+}
+
+.manga-section .box {
+  background: linear-gradient(to bottom, #fff, #ffeef5);
+  border-left: 4px solid #ff5fa2;
+}
+
+.funko-section .box {
+  background: linear-gradient(to bottom, #fff, #ffffe0);
+  border-left: 4px solid #ffcc00;
+}
+
+#newsletter-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  border: 5px solid #e23636;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  z-index: 1000;
+  width: 90%;
+  max-width: 500px;
+}
+
+#popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 999;
+}
+
+#close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #e23636;
+}
+
+@media screen and (max-width: 736px) {
+  #banner header h2 {
+    font-size: 2em;
+  }
+  
+  .major h2 {
+    font-size: 2em;
+  }
+  
+  #header h1 a {
+    font-size: 1.2em;
+  }
+}
+
+#newsletter-form input[type="text"],
+#newsletter-form input[type="email"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-container {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.checkbox-container label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.funko-promo {
+  background: #ffcc00;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.store-info {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.funko-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.funko-box .image.featured {
+  flex: 0 0 auto; 
+  height: 250px; 
+  overflow: hidden;
+}
+
+.funko-box .image.featured img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.funko-box header {
+  flex: 0 0 auto; 
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.funko-box p {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.funko-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.funko-section .row > div {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.funko-section .box {
+  width: 100%;
+}
+
+.comic-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.comic-box .image.featured {
+  flex: 1 1 auto; 
+  height: 500px; 
+  overflow: hidden;
+}
+
+.comic-cover{
+  height: 400px;
+}
+
+.comic-box .image.featured img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.comic-box header {
+  flex: 0 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.comic-box p {
+  flex: 1 0 auto;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.comic-box footer {
+  flex: 0 0 auto;
+}
+
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .row > div {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.portfolio .box {
+  width: 100%;
+}
+
+.manga-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.manga-box .image.featured {
+    flex: 0 0 auto;
+    height: 300px;
+    overflow: hidden;
+}
+
+.manga-box .image.featured img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.manga-box header {
+    flex: 0 0 auto;
+    padding-bottom: 0.5em;
+}
+
+.manga-box p {
+    flex: 1 0 auto;
+    min-height: 150px;
+}
+
+.manga-box footer {
+    flex: 0 0 auto;
+    margin-top: auto;
+}
+
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.actions li {
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.manga-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.manga-section .row > div {
+    display: flex;
+    flex: 1;
+}
+
+.manga-section .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.manga-section .box .image.featured {
+    flex: 0 0 auto;
+}
+
+.manga-section .box header {
+    flex: 0 0 auto;
+}
+
+.manga-section .box p {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.manga-section .box footer {
+    flex: 0 0 auto;
+    margin-top: auto;
+}
+
+.manga-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.5em;
+}
+
+.manga-actions li {
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.manga-actions .button {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    white-space: nowrap;
+    text-align: center;
+    width: auto;
+}
+
+.image-interior{
+  height: 450px;
+}
+
+.image-map{
+  
+  border: 2px solid #e23636;
+  height: 450px;
+}
+
+
+ul.dates .date strong {
+    color: #fff; 
+    background: transparent;
+}
+
+ul.dates li .date {
+    color: #fff;
+}
+
+ul.dates li .date * {
+    color: #fff !important;
+}
+
