@@ -34,7 +34,7 @@
       });
 
       $newsletterForm.html(
-        "<h3>Thanks for subscribing!</h3><p>Welcome to the Comic Universe community. Check your email for a special welcome discount!</p>"
+        "<h3>Thanks for subscribing!</h3><p>Welcome to the Griffin Comics community. Check your email for a special welcome discount!</p>"
       );
     });
 
